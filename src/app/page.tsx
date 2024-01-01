@@ -58,6 +58,7 @@ export default function Home() {
             key={icon.key}
             initial={{
               offsetDistance: `0%`,
+              rotate: 90,
             }}
             animate={{
               offsetDistance: `100%`,
@@ -74,7 +75,9 @@ export default function Home() {
               offsetPath: `path('${orbitPath}')`,
             }}
           >
-            <Link href={icon.link}>{icon.icon}</Link>
+            <Link href={icon.link} className="backdrop-blur-md rounded-md">
+              {icon.icon}
+            </Link>
           </motion.div>
         ))}
       </div>
