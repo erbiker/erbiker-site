@@ -45,7 +45,13 @@ export default function Home() {
           animate={{
             rotateX: [0, -180, 0],
             rotateY: [0, 180, 360],
-            transition: { type: 'tween', duration: 5, repeat: Infinity },
+            transition: {
+              delay: orbitSpeed,
+              type: 'tween',
+              duration: 5,
+              repeat: Infinity,
+              repeatDelay: orbitSpeed / 2,
+            },
           }}
         >
           <Image src="/eb.svg" alt="EB logo" width={124} height={124} />
