@@ -1,0 +1,7 @@
+minimumReleaseAgeExclude:
+  - framer-motion@14.4.0
+  - motion-dom@14.4.0
+  - motion@14.4.0
+
+allowBuilds:
+  unrs-resolver: true
